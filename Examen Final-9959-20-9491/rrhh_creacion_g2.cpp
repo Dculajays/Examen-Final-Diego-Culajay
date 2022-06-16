@@ -106,7 +106,7 @@ void empresa::menuPrincipal(){
         menuNomina();
         break;
     case 3:
-        menuPoliza();
+         mostrarLog();
         break;
     case 4:
        cout << "\n\t\t�Quiere salir del programa? [ si / no ] : "; cin>>desicion;
@@ -120,10 +120,8 @@ void empresa::menuPrincipal(){
         break;
         }
     }
-    break;
-    case 5:
-        mostrarLog();
-        break;
+
+
 }
 
 void empresa::menuMantenimiento(){
