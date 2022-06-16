@@ -87,7 +87,7 @@ void empresa::menuPrincipal(){
     log<<"entro al menu principal, ";
     log.close();
     int menu;
-    cout << "\n\t\t\tBienvenido al programa de ==RECURSOS HUMANOS==";
+    cout << "\n\t\t\tEXAMEN FINAL PROGRAMA DE DIEGO CULAJAY ";
     cout << "\n\n\t\tElija el numero del menu al que quiera ingresar\n"<< endl << "\t\t[1] Mantenimiento\n" << "\t\t[2] Nomina\n" << "\t\t[3] Poliza\n" << "\t\t[4] Impuestos\n" << "\t\t[6] Salir del programa\n";cout<<"\n\t\t";cin >> menu;
     switch(menu){
     case 1:
@@ -1373,7 +1373,7 @@ void empresa::mostrarDatosConceptoImpuestos(){
  	return true;
  }
 
- void empresa::agregar(ofstream &es){//funcion creada por Carlos Montes
+ void empresa::agregar(ofstream &es){
 	system("cls");
 	fstream log;
       log.open("bitacora.dat",ios::app|ios::out|ios::binary);
@@ -1401,7 +1401,7 @@ void empresa::mostrarDatosConceptoImpuestos(){
 	es.close();
 }
 
-void empresa::VerPoliza(ifstream &Lec){//funcion creada por Carlos Montes
+void empresa::VerPoliza(ifstream &Lec){
 	system("cls");
 	fstream log;
       log.open("bitacora.dat",ios::app|ios::out|ios::binary);
@@ -1434,7 +1434,7 @@ void empresa::VerPoliza(ifstream &Lec){//funcion creada por Carlos Montes
 	}
 }
 
-void empresa::reclamaciones(ofstream &Esc, ifstream &Lec){//funcion creada por Carlos Montes
+void empresa::reclamaciones(ofstream &Esc, ifstream &Lec){
 	system("cls");
 	fstream log;
       log.open("bitacora.dat",ios::app|ios::out|ios::binary);
@@ -1481,8 +1481,7 @@ void empresa::reclamaciones(ofstream &Esc, ifstream &Lec){//funcion creada por C
 	}
 }
 
-void empresa::ModificarPlan(ifstream &Lec){//funcion creada por Carlos Montes
-	system("cls");
+void empresa::ModificarPlan(ifstream &Lec){
       fstream log;
       log.open("bitacora.dat",ios::app|ios::out|ios::binary);
       log<<"ingreso a Modificar Plan de Poliza, ";
@@ -1521,9 +1520,8 @@ void empresa::ModificarPlan(ifstream &Lec){//funcion creada por Carlos Montes
 	rename("auxiliar.dat", "poliza.dat");
 }
 
- int main(){//funcion creada por Carlos Gonzalez
+ int main(){
 
-     //bitacora, log in, creado por Carlos Gonzalez
 
     system ("cls");
     int contador=0;
@@ -1564,7 +1562,8 @@ void empresa::ModificarPlan(ifstream &Lec){//funcion creada por Carlos Montes
                         }
                         caracter = getch();
                     }
-                    //instancia de clase USUARIOS, para consultar: primero se consulta el usuario, si existe, se consulta la contraseña
+
+
                     if (usuario==config1 && contra==config2){
                         system("cls");
                         ingresa=true;
