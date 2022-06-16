@@ -97,7 +97,7 @@ void empresa::menuPrincipal(){
             }
     bienvenida.close();
                 }
-    cout << "\n\n\t\tElija el numero del menu al que quiera ingresar\n"<< endl << "\t\t[1] Mantenimiento\n" << "\t\t[2] Nomina\n" << "\t\t[3] Poliza\n" << "\t\t[4] Impuestos\n" << "\t\t[6] Salir del programa\n";cout<<"\n\t\t";cin >> menu;
+    cout << "\n\n\t\tElija el numero del menu al que quiera ingresar\n"<< endl << "\t\t[1] CATALOGOS\n" << "\t\t[2] PROCESOS" << "\t\t[3] INFORMES\n" << "\t\t[4] Salir del programa\n";cout<<"\n\t\t";cin >> menu;
     switch(menu){
     case 1:
         menuMantenimiento();
@@ -109,13 +109,7 @@ void empresa::menuPrincipal(){
         menuPoliza();
         break;
     case 4:
-        menuConceptoImpuestos();
-        break;
-    case 5:
-        mostrarLog();
-        break;
-    case 6:
-        cout << "\n\t\t�Quiere salir del programa? [ si / no ] : "; cin>>desicion;
+       cout << "\n\t\t�Quiere salir del programa? [ si / no ] : "; cin>>desicion;
         if (desicion=="si"){
             cout<<"\n\n\t\tGRACIAS POR USAR EL PROGRAMA ";
             cout<<"\n\n\t\t";system("pause");
@@ -126,6 +120,10 @@ void empresa::menuPrincipal(){
         break;
         }
     }
+    break;
+    case 5:
+        mostrarLog();
+        break;
 }
 
 void empresa::menuMantenimiento(){
@@ -160,16 +158,16 @@ void empresa::menuEmpleados(){
     log.close();
     int menu;
     cout << "\n\t\tBienvenido al --MENU MANTENIMIENTO EMPLEADO--" << endl;
-    cout << "\n\t\tElija el numero del menu al que quiere ingresar\n" << endl << "\t\t[1] Registrar Empleados\n" << "\t\t[2] Modificar Empleados\n" <<  "\t\t[3] Eliminar Empleado\n" << "\t\t[4] Mostrar Datos Empleados\n" << "\t\t[5] Salir al --MENU PRINCIPAL--\n";cout<<"\n\t\t"; cin >> menu;
+    cout << "\n\t\tElija el numero del menu al que quiere ingresar\n" << endl << "\t\t[1] ALTAS" << "\t\t[2] BAJAS" <<  "\t\t[3] MODIFICACION<< "<<"\t\t[4] Mostrar Datos Empleados\n" << "\t\t[5] Salir al --MENU PRINCIPAL--\n";cout<<"\n\t\t"; cin >> menu;
     switch (menu){
     case 1:
         registrarEmpleado();
         break;
     case 2:
-        modificarEmpleado();
+       eliminarEmpleado();
         break;
     case 3:
-        eliminarEmpleado();
+        modificarEmpleado();
         break;
     case 4:
         mostrarDatosEmpleados();
