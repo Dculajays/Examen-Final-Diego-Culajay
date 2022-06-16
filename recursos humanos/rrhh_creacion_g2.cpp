@@ -108,7 +108,7 @@ void empresa::menuPrincipal(){
     case 6:
         cout << "\n\t\t�Quiere salir del programa? [ si / no ] : "; cin>>desicion;
         if (desicion=="si"){
-            cout<<"\n\n\t\tGRACIAS POR USAR EL RPOGRAMA ";
+            cout<<"\n\n\t\tGRACIAS POR USAR EL PROGRAMA ";
             cout<<"\n\n\t\t";system("pause");
             return exit (1);
         }
@@ -143,7 +143,7 @@ void empresa::menuMantenimiento(){
     }
 }
 
-void empresa::menuEmpleados(){//funcion creada por Carlos Gonzalez
+void empresa::menuEmpleados(){
     system("cls");
     fstream log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
@@ -173,7 +173,7 @@ void empresa::menuEmpleados(){//funcion creada por Carlos Gonzalez
     }
 }
 
-void empresa::registrarEmpleado(){//funcion creada por Carlos Gonzalez
+void empresa::registrarEmpleado(){
     system("cls");
     fstream baseDatos, log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
@@ -209,7 +209,7 @@ void empresa::registrarEmpleado(){//funcion creada por Carlos Gonzalez
     return menuEmpleados();
 }
 
-void empresa::modificarEmpleado(){//funcion creada por Carlos Gonzalez
+void empresa::modificarEmpleado(){
     system("cls");
     fstream baseDatos, modBaseDatos, log;
     cout << "\n\t\t\tEntrando al menu --MODIFICAR EMPLEADOS--" << endl;
@@ -274,7 +274,7 @@ void empresa::modificarEmpleado(){//funcion creada por Carlos Gonzalez
     return menuEmpleados();
 }
 
-void empresa::eliminarEmpleado(){//funcion creada por Carlos Gonzalez
+void empresa::eliminarEmpleado(){
     system("cls");
 	fstream baseDatos,modBaseDatos,log;
 	log.open("bitacora.dat",ios::app|ios::out|ios::binary);
