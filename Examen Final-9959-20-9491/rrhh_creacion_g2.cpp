@@ -337,7 +337,7 @@ void empresa::eliminarEmpleado(){
     return menuEmpleados();
 }
 
-void empresa::mostrarDatosEmpleados(){//funcion creada por Carlos Gonzalez
+void empresa::mostrarDatosEmpleados(){
     system("cls");
     fstream baseDatos, log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
@@ -455,7 +455,7 @@ void empresa::mostrarDatosEmpleados(){//funcion creada por Carlos Gonzalez
         cout<<"\n\n\t\tArchivo cerrado";}
 }
 
-void empresa::menuDepartamentos(){//funcion creada por Carlos Gonzalez (porque ya no esta MELANNY SECAIDA)
+void empresa::menuDepartamentos(){
     system("cls");
     int menu;
     fstream log;
@@ -485,7 +485,7 @@ void empresa::menuDepartamentos(){//funcion creada por Carlos Gonzalez (porque y
     }
 }
 
-void empresa::registrarDepto(){//funcion creada por Carlos Gonzalez (porque ya no esta MELANNY SECAIDA)
+void empresa::registrarDepto(){
     system("cls");
     fstream baseDatos, log;
     cout << "\n\t\t\tEntrando al menu --REGISTRAR DEPARTAMENTOS--\n" << endl;
@@ -511,7 +511,7 @@ void empresa::registrarDepto(){//funcion creada por Carlos Gonzalez (porque ya n
     return menuDepartamentos();
 }
 
-void empresa::modificarDepto(){//funcion creada por Carlos Gonzalez (porque ya no esta MELANNY SECAIDA)
+void empresa::modificarDepto(){
     system("cls");
     fstream baseDatos, modBaseDatos, log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
@@ -568,7 +568,7 @@ void empresa::modificarDepto(){//funcion creada por Carlos Gonzalez (porque ya n
     return menuDepartamentos();
 }
 
-void empresa::eliminarDepto(){//funcion creada por Carlos Gonzalez (porque ya no esta MELANNY SECAIDA)
+void empresa::eliminarDepto(){
     system("cls");
 	fstream file,file1,log;
 	log.open("bitacora.dat",ios::app|ios::out|ios::binary);
@@ -629,7 +629,7 @@ void empresa::eliminarDepto(){//funcion creada por Carlos Gonzalez (porque ya no
     return menuDepartamentos();
 }
 
-void empresa::mostrarDatosDepto(){//funcion creada por Carlos Gonzalez (porque ya no esta MELANNY SECAIDA)
+void empresa::mostrarDatosDepto(){
     system("cls");
     fstream baseDatos, log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
@@ -733,8 +733,7 @@ void empresa::mostrarDatosDepto(){//funcion creada por Carlos Gonzalez (porque y
         cout<<"\n\n\t\tArchivo cerrado";}
 }
 
-void empresa::menuNomina()//funcion creada por Diego Culajay
-{
+void empresa::menuNomina()
 fstream log;
 log.open("bitacora.dat",ios::app|ios::out|ios::binary);
 log<<"entro al MENU NOMINA ";
@@ -787,7 +786,7 @@ log.close();
     }while(choice!= 3);
 }
 
-void empresa::displayNomina()//funcion creada por Diego Culajay
+void empresa::displayNomina()
 {
 fstream log;
 log.open("bitacora.dat",ios::app|ios::out|ios::binary);
@@ -838,7 +837,7 @@ log.close();
 	baseDatos.close();
 }
 
-void empresa::modifyNomina()//funcion creada por Diego Culajay
+void empresa::modifyNomina()
 {
 fstream log;
 log.open("bitacora.dat",ios::app|ios::out|ios::binary);
@@ -904,7 +903,7 @@ log.close();
 	}
 }
 
-void empresa::searchNomina()//funcion creada por Diego Culajay
+void empresa::searchNomina()
 {
     fstream log;
 log.open("bitacora.dat",ios::app|ios::out|ios::binary);
@@ -948,7 +947,7 @@ log.close();
 	}
 }
 
-void empresa::deletNomina()//funcion creada por Diego Culajay
+void empresa::deletNomina()
 {
     fstream log;
 log.open("bitacora.dat",ios::app|ios::out|ios::binary);
@@ -1001,7 +1000,7 @@ log.close();
 	}
 }
 
-void empresa::menuConceptoImpuestos(){//funcion creada por William Mayen
+void empresa::menuConceptoImpuestos(){
     system("cls");
     fstream baseDatos, log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
@@ -1031,7 +1030,7 @@ void empresa::menuConceptoImpuestos(){//funcion creada por William Mayen
     }
 }
 
-void empresa::registrarConceptoImpuestos(){//funcion creada por William Mayen
+void empresa::registrarConceptoImpuestos(){
     system("cls");
     fstream baseDatos, log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
@@ -1065,7 +1064,7 @@ void empresa::registrarConceptoImpuestos(){//funcion creada por William Mayen
     return menuConceptoImpuestos();
 }
 
-void empresa::modificarConceptoImpuestos(){//funcion creada por William Mayen
+void empresa::modificarConceptoImpuestos(){
     system("cls");
     fstream log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
@@ -1129,7 +1128,7 @@ void empresa::modificarConceptoImpuestos(){//funcion creada por William Mayen
     return menuConceptoImpuestos();
 }
 
-void empresa::eliminarConceptoImpuestos(){//funcion creada por William Mayen
+void empresa::eliminarConceptoImpuestos(){
     system("cls");
     fstream log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
@@ -1192,7 +1191,7 @@ void empresa::eliminarConceptoImpuestos(){//funcion creada por William Mayen
     return menuConceptoImpuestos();
 }
 
-void empresa::mostrarDatosConceptoImpuestos(){//funcion creada por William Mayen
+void empresa::mostrarDatosConceptoImpuestos(){
     system("cls");
     fstream log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
@@ -1311,7 +1310,7 @@ void empresa::mostrarDatosConceptoImpuestos(){//funcion creada por William Mayen
 
 }
 
- void empresa::menuPoliza(){//funcion creada por Carlos Montes
+ void empresa::menuPoliza(){
  	int opt;
 	fstream log;
       log.open("bitacora.dat",ios::app|ios::out|ios::binary);
@@ -1350,7 +1349,7 @@ void empresa::mostrarDatosConceptoImpuestos(){//funcion creada por William Mayen
     }
  }
 
-  bool empresa::verificar(string ced, string num){ //funcion creada por Carlos Montes
+  bool empresa::verificar(string ced, string num){
  	ifstream leer("poliza.dat", ios::in|ios::binary);
 	fstream log;
       log.open("bitacora.dat",ios::app|ios::out|ios::binary);
